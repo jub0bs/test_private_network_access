@@ -5,7 +5,7 @@
   </head>
   <body>
     <script>
-      fetch("http://localhost:8081/cors")
+      fetch("http://localhost:8081/cors", {method: "PUT"})
         .then(resp => resp.json())
         .then(alert)
     </script>
